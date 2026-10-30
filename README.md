@@ -6,7 +6,7 @@ Workflow nạp dữ liệu từ **Google Drive** → xử lý (PDF, Excel, CSV, 
 
 ## 📸 Giao diện Workflow
 
-![RAG Pipeline](screenshots/workflow.png)
+![RAG Pipeline](workflow.png)
 
 **Luồng xử lý chính:**
 - Theo dõi file mới / file được cập nhật trên Google Drive
@@ -21,25 +21,10 @@ Workflow nạp dữ liệu từ **Google Drive** → xử lý (PDF, Excel, CSV, 
 ## 🗄️ Cấu trúc Database (Supabase)
 
 ### 1. Bảng `documents`
-Lưu nội dung đã được chia nhỏ + vector embedding
-
-| Cột         | Kiểu dữ liệu     | Mô tả                          |
-|-------------|------------------|--------------------------------|
-| id          | int8             | ID tự tăng                     |
-| content     | text             | Nội dung đoạn văn bản          |
-| metadata    | jsonb            | Thông tin metadata             |
-| embedding   | vector           | Vector embedding (Gemini)      |
+![Documents Table](document.png)
 
 ### 2. Bảng `document_metadata`
-Lưu thông tin file gốc
-
-| Cột         | Kiểu dữ liệu     | Mô tả                          |
-|-------------|------------------|--------------------------------|
-| id          | text             | ID file từ Google Drive        |
-| title       | text             | Tên file                       |
-| url         | text             | Link Google Drive              |
-| created_at  | timestamp        | Thời gian tạo                  |
-| schema      | text             | Schema (nếu có)                |
+![Document Metadata](dcm-metadata.png)
 
 ### 3. Bảng `document_rows`
 Lưu dữ liệu dạng bảng (từ Excel/CSV)
