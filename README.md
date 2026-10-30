@@ -27,7 +27,7 @@ Workflow nạp dữ liệu từ **Google Drive** → xử lý (PDF, Excel, CSV, 
 ![Document Metadata](dcm-metadata.png)
 
 ### 3. Bảng `document_rows`
-Lưu dữ liệu dạng bảng (từ Excel/CSV)
+![Document Rows](dcm-row.png)
 
 ---
 
