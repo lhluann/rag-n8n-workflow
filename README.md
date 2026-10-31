@@ -27,7 +27,7 @@ Workflow nạp dữ liệu từ **Google Drive** → xử lý (PDF, Excel, CSV, 
 ![Document Metadata](dcm-metadata.png)
 
 ### 3. Bảng `document_rows`
-![Document Rows](dcm-row.png)
+![Document Rows](dcm_row.png)
 
 ---
 
